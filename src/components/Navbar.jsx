@@ -12,45 +12,43 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-white dark:bg-gray-800 shadow-lg">
+    <nav className="bg-primary shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-gray-900 dark:text-white">
+            <Link to="/" className="text-3xl font-caramel text-background">
               Mau Mau Stories
             </Link>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <Link
-                to="/"
-                className="text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-              >
+              <Link to="/" className="text-background hover:bg-secondary px-3 py-2 rounded-md text-sm font-prata">
                 Home
               </Link>
               <Link
                 to="/stories"
-                className="text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                className="text-background hover:bg-secondary px-3 py-2 rounded-md text-sm font-prata"
               >
                 Stories
               </Link>
-              <Link
-                to="/about"
-                className="text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-              >
+              <Link to="/about" className="text-background hover:bg-secondary px-3 py-2 rounded-md text-sm font-prata">
                 About
               </Link>
               <Link
                 to="/contact"
-                className="text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                className="text-background hover:bg-secondary px-3 py-2 rounded-md text-sm font-prata"
               >
                 Contact
               </Link>
             </div>
           </div>
           <div className="flex items-center">
-            <input type="text" placeholder="Search stories" className="px-3 py-1 rounded-md text-sm" />
-            <button onClick={toggleDarkMode} className="ml-4 text-gray-700 dark:text-gray-300">
+            <input
+              type="text"
+              placeholder="Search stories"
+              className="px-3 py-1 rounded-md text-sm bg-background text-tertiary"
+            />
+            <button onClick={toggleDarkMode} className="ml-4 text-background">
               {darkMode ? "🌞" : "🌙"}
             </button>
           </div>
